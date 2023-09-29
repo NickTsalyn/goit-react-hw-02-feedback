@@ -44,7 +44,7 @@ export class App extends Component {
       <Wrapper>
         <SectionWrapper title="Give Feedback">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </SectionWrapper>
